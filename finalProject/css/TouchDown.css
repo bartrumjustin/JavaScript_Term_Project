@@ -1,0 +1,60 @@
+:root{
+    --bg: #0F131A;
+    --SecEnv: #313A4D;
+    --mainAcc: #CC6622;
+    --effect : #FFA34D;
+    --mainHudTxt: #00FFC2;
+    --secHudTxt: #6C5CE7;
+    --valueTxt: #F8F9FA;
+    --hudWarn: #FF1744;
+    
+}
+@font-face {
+    font-family: font;
+    src: url(../media/FiraCode-Regular.ttf);
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "top top top top"
+    "left action action right"
+    "left action action right"
+    "left action action right"
+    ;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100dvh;
+    width: 100dvw;
+    /*overflow: hidden;*/
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg);
+    font-family: font;
+}
+.hud{
+    color: var(--mainHudTxt);
+
+}
+#topHud{
+    background-color: #00FFC2;
+    grid-area: top;
+   
+   
+}
+#leftHud{
+    background-color: #CC6622;
+    grid-area: left;
+    
+    
+}
+#rightHud{
+    background-color: #FF1744;
+    grid-area: right;
+}
+#viewer{
+    grid-area: action;
+}
+#viewer>img{
+    
+    width:75%;
+}
