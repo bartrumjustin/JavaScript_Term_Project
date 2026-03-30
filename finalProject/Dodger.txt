@@ -1,0 +1,14 @@
+Caught in Kuipers Belt you have to dodge and weave yourself through the
+asteroid field. See how long you can last as your ship speeds faster with 
+every second.
+
+Mobile: simply tap the side of the screen you wish the space ship to go. 
+
+Desktop: use [f] for left and [j] for right.
+
+the game ends when you crash and the game will freeze so you can see how
+you crashed and the score you recieved.
+
+if you wish to copy or fork the concept or game, please CC my work.
+if you want to drop a comment about this game, please email me @
+Bartrumjustin@gmail.com

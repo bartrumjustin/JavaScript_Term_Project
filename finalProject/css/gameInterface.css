@@ -1,0 +1,154 @@
+:root{
+    --bg:#181425;
+    --text:#FFF1E8;
+    --cards:rgba(38, 43, 68, .8);
+    --accent:#8B9BB4;
+    --alert:#D95763;
+    --secAlert:#F0DE5F;
+}
+@font-face {
+    font-family: font;
+    src: url(../media/FiraCode-Regular.ttf);
+}
+@keyframes Scroll {
+    from{ 
+        background-position: 0%;
+    }
+    to{
+        background-position: right;
+    }
+}
+@keyframes Glow {
+    0%{
+        text-shadow: 0 0 5px var(--text);
+    }
+    50%{
+        text-shadow: 0 0 1.5px var(--text);
+    }
+    100%{
+        text-shadow: 0 0 5px var(--text);
+    }
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: font;
+    
+    margin: 0;
+    height: 100dvh;
+    width: 100dvw;
+    background-image: url(../media/guiBG.jpg);
+    background-size: 150% 100%;
+    background-repeat: no-repeat;
+    animation: Scroll 100s linear 2s infinite alternate;
+    
+}
+header{
+    justify-items: center;
+    z-index: 1;
+    box-shadow: 1px 1px 5px var(--accent);
+    border-radius: 20px;
+    corner-shape: bevel;
+    margin-top: 1em;
+    min-width: 80%;
+    max-width: 95%;
+    min-height: 4em;
+    background-color: var(--cards);
+
+}
+h1{
+    animation: Glow 2s linear 1s infinite both;
+    max-width: 90%;
+    font-size: 1em;
+    text-shadow: 0 0 5px var(--text);
+    color: var(--secAlert);
+    text-align: center;
+}
+#menu{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px var(--accent);
+    margin: .5em 0;
+    padding: .25em .5em;
+    min-width: 90%;
+    
+    background-color: var(--cards);
+    border-radius: 10px;
+}
+
+h3{
+    
+    font-size: 1em;
+    letter-spacing: .25em;
+}
+p{
+    
+    font-size: .8em;
+    font-weight: bolder;
+}
+
+a{
+    width: 100%;
+    color: var(--secAlert);
+    text-decoration: none;
+}
+a :active{
+    color: var(--alert);
+    text-shadow: 0 0 2.5px var(--text);
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (min-width: 800px) {
+    body{
+        justify-content: center;
+    }
+#menu{
+    height: 75%;
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+section{
+    max-width: 20%;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.btn{
+    border: .5em solid var(--alert);
+    background-color: var(--alert);
+}
+    a :hover {
+
+        text-shadow: 0 0 2.5px var(--text);
+    }
+a:active{
+        color: var(--alert);
+}
+p{
+    letter-spacing: .1em;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+h3{
+    font-size: 1.4em;
+    letter-spacing: .5em;
+}
+h1{
+    font-size: 1.6em;
+}
+img{
+    width: 75px;
+    height: 75px;
+}
+}
