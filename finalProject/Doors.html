@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Doors.css">
+    <title>Doors</title>
+    </head>
+    
+    <body>
+    
+        <h1>System Access</h1>
+    
+        <div class="stats">
+            <div>ATTEMPTS REMAINING: [<span id="tries">3</span>]</div>
+            <div id="message">INITIATING SCAN...</div>
+        </div>
+    
+        <div class="door-container" id="doorGrid"></div>
+    
+        <button class="btn-restart" id="restartBtn" onclick="initGame()">Reboot System</button>
+        <script src="./js/Doors.js" ></script>
+        </body>
+        
+        </html>

@@ -1,6 +1,6 @@
 :root{
     --bg: #0F131A;
-    --SecEnv: #313A4D;
+    --SecEnv: #313a4d;
     --mainAcc: #CC6622;
     --effect : #FFA34D;
     --mainHudTxt: #00FFC2;
@@ -14,6 +14,7 @@
     src: url(../media/FiraCode-Regular.ttf);
 }
 body{
+    overflow: hidden;
     display: grid;
     grid-template-areas: 
     "top top top top"
@@ -21,8 +22,8 @@ body{
     "left action action right"
     "left action action right"
     ;
-    grid-template-columns: 1fr 3fr 3fr 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 2fr 4fr 4fr 2fr;
+    grid-template-rows: 1fr 11fr;
     height: 100dvh;
     width: 100dvw;
     /*overflow: hidden;*/
@@ -33,28 +34,93 @@ body{
 }
 .hud{
     color: var(--mainHudTxt);
-
+    z-index: 1;
 }
 #topHud{
-    background-color: #00FFC2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    background-color: rgba(49, 58, 77,.25) ;
     grid-area: top;
+    color: #2cff05;
+    
    
    
 }
+#topHud>span{
+    align-items: center;
+    display: inline-flex;
+}
+.entity{
+    margin: 0 .5em;
+
+}
+#sysCont{
+    padding: .5em;
+}
 #leftHud{
-    background-color: #CC6622;
+    height: 100%;
+    background-color: rgba(49, 58, 77, .25);
     grid-area: left;
     
     
+    
+}
+#NumAlt{
+    border: .15em solid var(--mainAcc);
+}
+#ScaleAlt{
+    display: flex;
+    flex-direction: column;
+    
 }
 #rightHud{
-    background-color: #FF1744;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--valueTxt);
+    background-color: rgba(49, 58, 77, .25);
     grid-area: right;
+    align-items: center;
 }
-#viewer{
-    grid-area: action;
+#rightHud>span{
+    margin: 1em 0;
 }
-#viewer>img{
+#markerCont{
+    position: absolute;
+    bottom: 0;
+    display: inline-flex;
     
-    width:75%;
+}
+#markerCont>p{
+    margin: 0 .5em;
+    font-size: 1.2em;
+}
+
+#viewer{
+    display: flex;
+    width: 100%;
+    grid-area: action;
+    align-items: center ;
+    justify-content: center;
+}
+#status{
+    position: absolute;
+    align-self: flex-start;
+}
+.ships{
+    position: absolute;
+    transform: scale(.25);
+}
+#viewer>#ship{
+    padding-bottom: 150px;
+}
+#left{
+    transform: translateY(0px);
+}
+#terra{
+    width: 100%;
+    height: 10px;
+    align-self: flex-end;
+    background-color: #2cff05;
 }

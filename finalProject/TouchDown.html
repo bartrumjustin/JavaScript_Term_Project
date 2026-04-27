@@ -4,20 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/TouchDown.css">
+    <script src="./js/jquery.js"></script>
     <title>Touch Down!</title>
 </head>
 <body>
     <div id="topHud" class="hud">
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
+        <div id="sysCont">
+        <span id="masterGen" class="entity">Master:</span> <p id="sysState">Warn</p>
+        </div>
+        <span class="entity">&Delta;T: <p id="TimeState">--:--</p></span>
     </div>
-    <div id="leftHud" class="hud"></div>
-    <div id="rightHud" class="hud"></div>
+    <div id="leftHud" class="hud">
+        <p id="NumAlt">123</p>
+        
+    </div>
+    <div id="rightHud" class="hud">
+        <span>T</span>
+        <span>E</span>
+        <span>M</span>
+        <span>P</span>
+        <span>&Delta;</span>
+        <div id="markerCont">
+            <p id="left">&lt;</p>
+            <p id="right">&gt;</p>
+        </div>
+    </div>
     <div id="viewer">
-        <img src="./media/LanderShipV2.png" alt="">
+        <p id="status"></p>
+        <img class="ships" id="ship" src="./media/LanderShipV2.png" alt="ship">
+        <img class="ships"  id="shipfull" src="./media/LanderShipFull.png" alt="full thrust">
+        <img class="ships" id="shipLeft" src="./media/LanderShipLeft.png" alt="left thrust">
+        <img class="ships" id="shipRight" src="./media/LanderShipRight.png" alt="right thrust">
+        <div id="terra"></div>
     </div>
+        
+    
     <script src="./js/TouchDown.js"></script>
 </body>
 </html>

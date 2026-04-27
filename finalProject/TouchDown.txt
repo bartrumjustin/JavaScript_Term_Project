@@ -3,3 +3,23 @@ ground with no damage as possible and with enough fuel to reneter space.
 Easier said than done!
 
 If you wish to fork or copy this concept or game please CC this work. 
+
+Top HUD
+Features a system warning on the left and a time counter on the right.
+
+Left HUD
+This will show your altitude and will flow downward as you fall and rise as your thrust upward.
+
+Right HUD
+This shows your thrust temprature. It will go yellow for caution and red for nearing overheat.
+
+Failure states:
+If the thruster temprature reaches max, you will lose.
+If your angle of attack goes beyond 80 degrees, you will lose.
+If you strike the surface at roughly 15 feet per second you will lose.
+
+To Win / Play:
+The game will initially run a visual systems check and provide you with instructions depending on your device.
+[A] for left thruster, [D] for right thruster
+Using any thruster will impart momentum, make sure you correct this rotation, if you are greater than 45 degrees you will be warned.
+as you get closer to the surface, maintain your thruster impulses to manage rotation and slow the craft to a landing speed of less than 15 feet per second. 
